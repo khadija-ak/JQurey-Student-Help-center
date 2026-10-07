@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Character encoding -->
+    <meta charset="UTF-8" />
+    <!-- Makes website responsive on mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Website title -->
+    <title>Student Help Center</title>
+    <!-- Connect CSS file -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+  
+    <header>
+      <h1>🎓 Student Help Center</h1>
+      <p>Learn Science, Technology, Engineering, and Mathematics</p>
+    </header>
+    
+    <main>
+      
+      <section class="section">
+        <h2>Course Information</h2>
+       
+        <button id="aboutBtn">Show Course Information</button>
+      
+        <div id="aboutText">
+          <p>
+            Welcome to the Student Help Center! This platform is designed to
+            provide students with valuable resources and tools to enhance their
+            learning experience. Our courses cover a wide range of topics in
+            Science, Technology, Engineering, and Mathematics (STEM).
+          </p>
+          <p>
+            Our goal is to make learning accessible and engaging for students of
+            all levels. Whether you're a beginner or an advanced learner, we
+            have something for everyone. Explore our courses, practice your
+            skills, and take your knowledge to the next level!
+          </p>
+        </div>
+      </section>
+    
+      <section class="section">
+        <h2>Our Courses</h2>
+
+        <div class="course-container">
+          <div class="course-card">
+            <h3>Science</h3>
+
+            <p>Learn the fundamentals of science.</p>
+          </div>
+          <div class="course-card">
+            <h3>Technology</h3>
+            <p>Learn about the latest technological advancements.</p>
+          </div>
+          <div class="course-card">
+            <h3>Engineering</h3>
+
+            <p>Learn the principles of engineering.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================
+             CHANGE EVENT
+        ========================== -->
+
+      <section class="section">
+        <h2>Select Your Course</h2>
+
+        <select id="course">
+          <option value="">Select a Course</option>
+
+          <option value="Science">Science</option>
+
+          <option value="Technology">Technology</option>
+
+          <option value="Engineering">Engineering</option>
+
+          <option value="Mathematics">Mathematics</option>
+
+            <option value="Computer Science">Computer Science</option>
+        </select>
+
+       
+        <p id="selectedCourse"></p>
+      </section>
+
+      <!-- =========================
+             FAQ ACCORDION
+        ========================== -->
+
+      <section class="section">
+        <h2>Frequently Asked Questions</h2>
+
+        <!-- Parent container -->
+        <div id="faqContainer">
+          <!-- Question 1 -->
+          <div class="faq-item">
+            <div class="question">What is Science?</div>
+
+            <div class="answer">
+              Science is the study of the natural world and the laws that govern it.
+            </div>
+          </div>
+
+          <!-- Question 2 -->
+          <div class="faq-item">
+            <div class="question">What is Technology?</div>
+
+            <div class="answer">Technology refers to the tools, machines, and systems used to solve problems and improve our lives.</div>
+          </div>
+
+          <!-- Question 3 -->
+          <div class="faq-item">
+            <div class="question">What is Mathematics?</div>
+
+            <div class="answer">
+              Mathematics is the study of numbers, quantities, and shapes.
+            </div>
+          </div>
+
+          <!-- Question 4 -->
+          <div class="faq-item">
+            <div class="question">What is Engineering?</div>
+
+            <div class="answer">
+              Engineering is the use of scientific principles to design and build machines, structures, and other items.
+            </div>
+          </div>
+        </div>
+      </section>
+    
+      <section class="section contact-section">
+        <h2>Need Help?</h2>
+        <p>Contact us if you have any questions.</p>
+        <!-- Open modal button -->
+        <button id="contactBtn">Contact Us</button>
+      </section>
+    </main>
+
+    
+
+    <div id="contactModal">
+      <div class="modal-content">
+        <!-- Modal heading -->
+        <h2>Contact Us</h2>
+
+        <!-- Name input -->
+        <input type="text" placeholder="Enter your name" />
+
+        <!-- Email input -->
+        <input type="email" placeholder="Enter your email" />
+
+        <!-- Message -->
+        <textarea placeholder="Enter your message"> </textarea>
+
+        <!-- Submit button -->
+        <button id="submitBtn">Submit</button>
+
+        <!-- Close button -->
+        <button id="closeBtn">Close</button>
+      </div>
+    </div>
+
+   
+
+    <!--
+        jQuery library is loaded first.
+    -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!--
+        Our JavaScript file is loaded after jQuery.
+    -->
+    <script src="script.js"></script>
+  </body>
+</html>
